@@ -1,3 +1,7 @@
+.root {
+  margin: 0 20px;
+}
+
 .banner {
   width: 100%;
   height: 100px;
@@ -9,7 +13,15 @@
   position: absolute;
   text-decoration: none;
   font-size: 60px;
-  text-shadow: 4px 4px var(--soft-black);
+}
+
+.heading-font {
+  font-family: retro, monospace;
+}
+
+@font-face {
+  font-family: "retro";
+  src: url(../../pattern-lib/fonts/retro_computer_personal_use.ttf)format("opentype");
 }
 
 @media screen and (max-width: 700px) {

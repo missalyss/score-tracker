@@ -1,12 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TODO
 
-## Available Scripts
+[ ] - start with 1 player, add on other players
+[ ] - have players wrap in mobile/when more than 2
+[ ] - "first to ___" check/make total red.
+[ ] - maybe "best out of _" like rock paper scissors
+[ ] - fake dice/coin flip
+[ ] - winner animation
 
-In the project directory, you can run:
 
-### `npm start`
-
-Runs the app in the development mode.<br />
+`npm start`
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />

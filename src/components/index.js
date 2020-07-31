@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from './header';
-import PlayerWrapper from './player-wrapper';
+import Players from './players';
 
 const Root = () => {
   return (
-    <div className="Root">
+    <div>
       <Header />
-      <PlayerWrapper />
+      <Players />
     </div>
   );
 }
