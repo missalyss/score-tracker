@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import ScoreInput from './score-input';
 import PlayerInput from './player-input';
+import DealerButton from '../dealer-button';
 
-const PlayerScore = ({ name, setPlayerName, playerNumber, className }) => {
+
+const PlayerScore = ({ name, setPlayerName, playerNumber, className, playerToDeal, setPlayerToDeal }) => {
   const [score, setScore] = useState(undefined);
   const [total, setTotal] = useState(0);
   const [roundNumber, setRoundNumber] = useState(0);
   const [scoreList] = useState([]);
+
 
   return (
     <div className={className}>
@@ -23,6 +26,13 @@ const PlayerScore = ({ name, setPlayerName, playerNumber, className }) => {
         })}
       </div>
       <p className="text-center md-font">Total: {total}</p>
+
+      {playerToDeal === playerNumber && (
+        <div className="mt7 pt7 flex justify-center">
+          <DealerButton playerToDeal={playerToDeal} setPlayerToDeal={setPlayerToDeal} />
+        </div>
+      )
+      }
     </div>
   );
 }
