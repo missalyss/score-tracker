@@ -1,5 +1,9 @@
-html {
-  cursor: crosshair;
+html, label, img, a {
+  cursor: url(../components/images/cursor-arrow.png), crosshair;
+}
+
+input {
+  cursor: url(../components/images/cursor-text.png), crosshair;
 }
 
 body {

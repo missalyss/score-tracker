@@ -3,9 +3,8 @@
   background: var(--black);
   color: var(--neon-green);
   font-family: monospace;
-  font-size: 20px;
+  font-size: 30px;
   outline: none;
-  /* text-decoration: underline; */
 }
 
 .playerWrap {

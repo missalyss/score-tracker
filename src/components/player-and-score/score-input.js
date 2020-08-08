@@ -2,28 +2,30 @@ import React from 'react';
 import '../styles/player.css';
 
 const ScoreInput = ({ score, setScore, setTotal, total, setRoundNumber, roundNumber, scoreList }) => {
-
+  const submitScore = () => {
+    const newRoundNumber = roundNumber + 1;
+    if (isNaN(score)) {
+      return;
+    }
+    setTotal(parseInt(score) + parseInt(total));
+    setRoundNumber(newRoundNumber);
+    scoreList.push({ roundNumber: newRoundNumber, score })
+    setScore(NaN)
+    return;
+  }
   return (
     <input
       className="playerName pb5"
       type="number"
       size="10"
       min="-999"
+      step="1"
       maxLength="10"
       onChange={(e) => {
-        const newScore = parseInt(e.target.value);
-        setScore(newScore)
+        setScore(e.target.value)
       }}
-      onBlur={() => {
-        const newRoundNumber = roundNumber + 1;
-        if (isNaN(score)) {
-          return;
-        }
-        setTotal(score + total);
-        setRoundNumber(newRoundNumber);
-        scoreList.push({ roundNumber: newRoundNumber, score })
-        setScore(0)
-      }}
+      onBlur={submitScore}
+      onSubmit={submitScore}
       onFocus={() => {
         if (score === 0) {
           setScore(undefined);
