@@ -1,0 +1,43 @@
+.lg-font {
+  font-size: 24px;
+}
+
+.md-font {
+  font-size: 20px;
+}
+
+.sm-font {
+  font-size: 16px;
+}
+
+.xs-font {
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-underline {
+  text-decoration: underline;
+}

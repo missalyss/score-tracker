@@ -1,0 +1,55 @@
+.height-100 {
+  height: 100%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.radius-1 {
+  border-radius: 8px;
+}
+
+.radius-2 {
+  border-radius: 16px;
+}
+
+.border-black {
+  border: var(--black) 2px solid;
+}
+
+.border-none {
+  border: none;
+}
