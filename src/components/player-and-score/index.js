@@ -10,7 +10,6 @@ const PlayerScore = ({ name, setPlayerName, playerNumber, className, playerToDea
   const [roundNumber, setRoundNumber] = useState(0);
   const [scoreList] = useState([]);
 
-
   return (
     <div className={className}>
       <PlayerInput name={name} setPlayerName={setPlayerName} playerNumber={playerNumber} />

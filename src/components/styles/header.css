@@ -1,6 +1,6 @@
-.root {
+/* .root {
   margin: 0 20px;
-}
+} */
 
 .banner {
   width: 100%;
@@ -10,7 +10,6 @@
 
 .heading-text {
   margin: 0;
-  position: absolute;
   text-decoration: none;
   font-size: 60px;
 }

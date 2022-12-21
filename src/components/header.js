@@ -3,15 +3,13 @@ import './styles/header.css';
 
 const Header = () => {
   return (
-    <a href="/">
-      <div className="flex justify-center align-center bg-med-green banner">
-        <h1 className="heading-text text-black heading-font">
-          <marquee>
+    // <a href="/">
+        <h1 className="flex justify-center align-center bg-med-green banner heading-text text-black heading-font">
+          <marquee aria-live="polite">
             * SCORE * TRACKER *
           </marquee>
         </h1>
-      </div>
-    </a>
+    // </a>
   );
 }
 

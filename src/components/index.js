@@ -2,13 +2,13 @@ import React from 'react';
 import Header from './header';
 import Players from './players';
 
-const Root = () => {
+const HomePage = () => {
   return (
-    <div>
+    <React.Fragment>
       <Header />
       <Players />
-    </div>
+    </React.Fragment>
   );
 }
 
-export default Root;
+export default HomePage;

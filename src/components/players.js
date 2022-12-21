@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './styles/header.css';
 import PlayerScore from './player-and-score';
+import './styles/header.css';
 
 const Players = () => {
   const [name1, setPlayerName1] = useState('LOU');
@@ -11,7 +11,7 @@ const Players = () => {
   const [playerToDeal, setPlayerToDeal] = useState(1);
 
   return (
-    <div className="flex justify-evenly height-100 mt7 mb6 ml5 mr5">
+    <div className="flex flex-wrap justify-evenly height-100 mt7 mb6 ml5 mr5">
       <PlayerScore
         className="mr7"
         key="player1"
